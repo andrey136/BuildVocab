@@ -1,38 +1,88 @@
-.App {
+body, html, div, ul, li, h1, h2, h3, h4, h5, section, article, table, tr, td, ol, p{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 960px;
+  margin: 0 auto;
+}
+
+#MainHeader h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#MainApp{
+  /* height: 300px; */
+  width: 100%;
+  background: rgba(0, 76, 255, 0.418)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#categories{
+  background: rgba(255, 218, 185, 0.712);
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#col-2-categ{
+  float: right;
+}
+
+#col-1-categ{
+  float: left;
+}
+
+.word-category{
+  margin-top: 20px;
+  width: 400px;
+  height: 180px;
+  border-radius: 12px;
+  background-color: rgb(230, 255, 185);
+  /* padding: 100px 50px */
+}
+
+.entry{
+  display: inline-block;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 15%;
+  width: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#word-list ul{
+  text-decoration: none;
+  list-style: none;
+  font-size: 2em;
+}
+
+#word-list ul .container{
+  margin: 10px 0;
+}
+
+.underline{
+  border-bottom: 1px solid rgb(47, 39, 39);
+  margin-top: 8px;
+}
+
+.flex-container-center{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.word-col-header{
+  /* width:fjjjmj */
+  font-size: 2em;
+  font-weight: bold;
+  width: 300px;
+  padding-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.word-line li{
+  width: 300px;
+  padding-left: 20px;
 }
