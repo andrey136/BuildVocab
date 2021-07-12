@@ -25,9 +25,13 @@ class Categories extends Component{
                         <div id={col_id} key={Math.random()}>
                             { 
                                 this.renderElements(ind + 1, 3).map(category => 
-                                    <div className='word-category' key={Math.random()} onClick={() => this.props.seeVocabulary(category)}>
+                                    <div className='word-category' key={Math.random()} >
                                         <div className="entry">
                                             {category}
+                                        </div>
+                                        <div className="action-container flex-container-center">
+                                            <div className="see-vocab" onClick={() => this.props.seeVocabulary(category)}>See Vocabulary</div>
+                                            <div className="pract-vocab" onClick={() => this.props.practiceVocab(category)}>Practice</div>
                                         </div>
                                     </div>
                                 ) 

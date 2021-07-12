@@ -3,23 +3,29 @@ body, html, div, ul, li, h1, h2, h3, h4, h5, section, article, table, tr, td, ol
   padding: 0;
 }
 
-body{
-  width: 960px;
-  margin: 0 auto;
+#MainHeader{
+  background: rgb(24, 22, 22);
+  color: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 #MainHeader h1{
   text-align: center;
+  font-size: 3em;
+  cursor: pointer;
+  display: inline-block;
 }
 
-#MainApp{
-  /* height: 300px; */
-  width: 100%;
-  background: rgba(0, 76, 255, 0.418)
+#MainContent{
+  width: 960px;
+  margin: 0 auto;
 }
+
 
 #categories{
-  background: rgba(255, 218, 185, 0.712);
+  /* background: rgba(255, 218, 185, 0.712); */
   width: 100%;
 }
 
@@ -35,8 +41,9 @@ body{
   margin-top: 20px;
   width: 400px;
   height: 180px;
+  border: 1px solid blueviolet;
   border-radius: 12px;
-  background-color: rgb(230, 255, 185);
+  background-color: rgba(185, 216, 255, 0.502);
   /* padding: 100px 50px */
 }
 
@@ -60,10 +67,6 @@ body{
   font-size: 2em;
 }
 
-#word-list ul .container{
-  margin: 10px 0;
-}
-
 .underline{
   border-bottom: 1px solid rgb(47, 39, 39);
   margin-top: 8px;
@@ -80,9 +83,107 @@ body{
   font-weight: bold;
   width: 300px;
   padding-left: 20px;
+  margin-bottom: 10px;
 }
 
 .word-line li{
   width: 300px;
   padding-left: 20px;
+}
+
+.action-container{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 1.5em;
+  visibility: hidden;
+}
+
+.word-category:hover{
+  border: 1px solid rgba(185, 216, 255, 0.851);
+  background: rgba(185, 216, 255, 0.851);
+}
+
+.word-category:hover > .action-container{
+  visibility: visible;
+}
+
+.action-container .see-vocab{
+  background: rgb(0, 157, 255);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.action-container .see-vocab:hover{
+  background: rgb(56, 56, 254);
+}
+
+.action-container .pract-vocab{
+  background: rgb(255, 119, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.action-container .pract-vocab:hover{
+  background: rgb(255, 68, 0);
+}
+
+.practice-form{
+  width: 600px;
+  /* height: 300px; */
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 2px solid rgb(0, 157, 255);
+  background: rgb(255, 255, 255);
+  padding: 20px 10px;
+}
+
+.word-exm{
+  text-align: center;
+  /* padding-top: 30px; */
+  font-size: 48px;
+}
+
+.ans-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.ans-form .ans-inp{
+  font-size: 30px;
+  height: 50px;
+  width: 80%;
+  border: 1px solid rgb(0, 174, 0);
+  padding: 0 10px;
+  text-align: center;
+}
+
+.next-word-btn{
+  width: 160px;
+  /* height: 50px; */
+  /* background: rgba(56, 134, 254, 1); */
+  background:rgb(56, 56, 254);
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 224, 224);
+  padding: 10px 0;
+}
+
+.next-word-btn:hover{
+  background: rgba(56, 134, 254, 1);
+  /* background: rgb(220, 114, 255); */
+  color: white;
+  cursor: pointer;
+}
+
+.blue{
+  background: rgba(65, 105, 225, 0.454);
 }

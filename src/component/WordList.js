@@ -14,8 +14,9 @@ class WordList extends Component {
             <div className="word-col-header">Russian</div>
         </div>
         <ul>
-            {this.words.map(word => 
-                <div className='container'>
+
+            {this.words.map((word, ind) => 
+                <div className={ind % 2 === 0 ? 'container blue' : 'container'}>
                     <div className="word-line flex-container-center">
                         <li>{word['span-def-art']} {word['span-word']}</li>
                         <li>{word['eng-trans']}</li>
@@ -25,6 +26,18 @@ class WordList extends Component {
                 </div>
                 
             )}
+
+            {/* {this.words.map(word => 
+                <div className='container'>
+                    <div className="word-line flex-container-center">
+                        <li>{word['span-def-art']} {word['span-word']}</li>
+                        <li>{word['eng-trans']}</li>
+                        <li>{word['rus-trans']}</li>
+                    </div>
+                    <div className="underline"></div>
+                </div>
+                
+            )} */}
         </ul>
 
     </div>
