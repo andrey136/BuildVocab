@@ -187,3 +187,21 @@ body, html, div, ul, li, h1, h2, h3, h4, h5, section, article, table, tr, td, ol
 .blue{
   background: rgba(65, 105, 225, 0.454);
 }
+
+/* {
+  "span-word": "padre",
+  "transcription": "", 
+  "speach": {
+      "noun": {
+          "span-indef-art": "un", 
+          "span-def-art": "el",
+          "gender": "",
+          "eng-trans": "father", 
+          "rus-trans": "отец",
+          "meaning": [
+              {"descr": "", "examples": []}
+          ]
+      },
+      "id": 123
+  }
+}, */

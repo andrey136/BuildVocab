@@ -2,7 +2,13 @@
     "categories":{
         "Family":[
             {"span-word": "padre", "eng-trans": "father", "rus-trans": "отец", "span-indef-art": "un", "span-def-art": "el"},
-            {"span-word": "madre", "eng-trans": "mother", "rus-trans": "мать", "span-indef-art": "una", "span-def-art": "la"}
+            {"span-word": "madre", "eng-trans": "mother", "rus-trans": "мать", "span-indef-art": "una", "span-def-art": "la"},
+            {"span-word": "hermano", "eng-trans": "brother", "rus-trans": "брат", "span-indef-art": "un", "span-def-art": "el"},
+            {"span-word": "hermana", "eng-trans": "sister", "rus-trans": "сестра", "span-indef-art": "una", "span-def-art": "la"},
+            {"span-word": "abuelo", "eng-trans": "grandfather", "rus-trans": "дедушка", "span-indef-art": "un", "span-def-art": "el"},
+            {"span-word": "abuela", "eng-trans": "grandmother", "rus-trans": "бабушка", "span-indef-art": "una", "span-def-art": "la"},
+            {"span-word": "hijo", "eng-trans": "son", "rus-trans": "сын", "span-indef-art": "un", "span-def-art": "el"},
+            {"span-word": "hija", "eng-trans": "daughter", "rus-trans": "дочь", "span-indef-art": "una", "span-def-art": "la"}
         ],
         "Fruit":[
             {"span-word": "manzana", "eng-trans": "apple", "rus-trans": "яблоко", "span-indef-art": "una", "span-def-art": "la"},
